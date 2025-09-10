@@ -3,6 +3,8 @@ from babel.messages import frontend as babel
 from setuptools import setup
 from setuptools.command.build_py import build_py as _build_py
 
+# HEHE KALI GO BRRRRRRRRRRRR
+
 IS_ZIP = os.environ.get("ZIP_BUILD") == "1"
 
 
