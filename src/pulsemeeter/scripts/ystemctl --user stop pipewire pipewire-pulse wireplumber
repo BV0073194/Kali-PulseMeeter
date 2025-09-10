@@ -1,0 +1,49 @@
+[0;1;32m●[0m pipewire.service - PipeWire Multimedia Service
+     Loaded: loaded (]8;;file://kali/usr/lib/systemd/user/pipewire.service\/usr/lib/systemd/user/pipewire.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+    Drop-In: /usr/lib/systemd/user/pipewire.service.d
+             └─]8;;file://kali/usr/lib/systemd/user/pipewire.service.d/kali.conf\kali.conf]8;;\
+     Active: [0;1;32mactive (running)[0m since Tue 2025-09-09 17:21:12 PDT; 1min 46s ago
+ Invocation: bde8e3f98e904514b38a62caf1b8ab05
+TriggeredBy: [0;1;32m●[0m pipewire.socket
+   Main PID: 29036 (pipewire)
+      Tasks: 3[0;38;5;245m (limit: 17952)[0m
+     Memory: 4.9M (peak: 5.2M)
+        CPU: 31ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire.service
+             └─[0;38;5;245m29036 /usr/bin/pipewire[0m
+
+Sep 09 17:21:12 kali systemd[2312]: pipewire.service: Scheduled restart job, restart counter is at 2.
+Sep 09 17:21:12 kali systemd[2312]: Started pipewire.service - PipeWire Multimedia Service.
+
+[0;1;32m●[0m pipewire-pulse.service - PipeWire PulseAudio
+     Loaded: loaded (]8;;file://kali/usr/lib/systemd/user/pipewire-pulse.service\/usr/lib/systemd/user/pipewire-pulse.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+    Drop-In: /usr/lib/systemd/user/pipewire-pulse.service.d
+             └─]8;;file://kali/usr/lib/systemd/user/pipewire-pulse.service.d/kali.conf\kali.conf]8;;\
+     Active: [0;1;32mactive (running)[0m since Tue 2025-09-09 17:22:27 PDT; 31s ago
+ Invocation: 541d0b38e1274c1ab9bdbd20c1028fc5
+TriggeredBy: [0;1;32m●[0m pipewire-pulse.socket
+   Main PID: 30024 (pipewire-pulse)
+      Tasks: 3[0;38;5;245m (limit: 17952)[0m
+     Memory: 1.3M (peak: 2.1M)
+        CPU: 19ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire-pulse.service
+             └─[0;38;5;245m30024 /usr/bin/pipewire-pulse[0m
+
+Sep 09 17:22:27 kali systemd[2312]: pipewire-pulse.service: Scheduled restart job, restart counter is at 6.
+Sep 09 17:22:27 kali systemd[2312]: Started pipewire-pulse.service - PipeWire PulseAudio.
+
+[0;1;32m●[0m wireplumber.service - Multimedia Service Session Manager
+     Loaded: loaded (]8;;file://kali/usr/lib/systemd/user/wireplumber.service\/usr/lib/systemd/user/wireplumber.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Tue 2025-09-09 17:21:12 PDT; 1min 46s ago
+ Invocation: e89b814558e642fe980416a5ba49714d
+   Main PID: 29037 (wireplumber)
+      Tasks: 6[0;38;5;245m (limit: 17952)[0m
+     Memory: 8.6M (peak: 9.9M)
+        CPU: 364ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/wireplumber.service
+             └─[0;38;5;245m29037 /usr/bin/wireplumber[0m
+
+Sep 09 17:21:12 kali systemd[2312]: Started wireplumber.service - Multimedia Service Session Manager.
+Sep 09 17:21:13 kali wireplumber[29037]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mspa.bluez5: BlueZ system service is not available[0m
+Sep 09 17:21:13 kali wireplumber[29037]: [0;1;39m[0;1;31m[0;1;39mwp-device: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?[0m
+Sep 09 17:21:13 kali wireplumber[29037]: [0;1;39m[0;1;31m[0;1;39ms-monitors-libcamera: PipeWire's libcamera SPA plugin is missing or broken. Some camera types may not be supported.[0m
