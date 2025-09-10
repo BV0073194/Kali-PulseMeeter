@@ -1,0 +1,2 @@
+[console_scripts]
+pulsemeeter = pulsemeeter.main:main
