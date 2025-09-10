@@ -35,7 +35,7 @@ jobs:
     - name: get pull-request files
       if: ${{ github.event_name == 'pull_request' }}
       id: changed-files-pr
-      uses: tj-actions/changed-files@v24
+      uses: tj-actions/changed-files@v46
       with:
         sha: ${{ github.event.pull_request.head.sha }}
         
@@ -43,7 +43,7 @@ jobs:
     - name: get commit files
       if: ${{ github.event_name != 'pull_request' }}
       id: changed-files-else
-      uses: tj-actions/changed-files@v24
+      uses: tj-actions/changed-files@v46
       
       # ----
       # COMMIT OR OTHER PUSH
